@@ -1,0 +1,15 @@
+﻿  ofApp.cpp
+     Creating library bin\Assignment0_debug.lib and object bin\Assignment0_debug.exp
+  Assignment0.vcxproj -> C:\Users\Famke van Meurs\Documents\of_v0.9.8_vs_release\apps\myApps\Assignment0\bin\Assignment0_debug.exe
+  Assignment0.vcxproj -> bin\Assignment0_debug.pdb (Full PDB)
+  
+  	                   9	C:\Users\Famke van Meurs\Documents\of_v0.9.8_vs_release\export\vs\Win32\
+  	    New File  		 2939392	C:\Users\Famke van Meurs\Documents\of_v0.9.8_vs_release\export\vs\Win32\assimp.dll
+  	    New File  		 1266176	C:\Users\Famke van Meurs\Documents\of_v0.9.8_vs_release\export\vs\Win32\fmodex.dll
+  	    New File  		 1312768	C:\Users\Famke van Meurs\Documents\of_v0.9.8_vs_release\export\vs\Win32\fmodexL.dll
+  	    New File  		 5647872	C:\Users\Famke van Meurs\Documents\of_v0.9.8_vs_release\export\vs\Win32\FreeImage.dll
+  	    New File  		  580608	C:\Users\Famke van Meurs\Documents\of_v0.9.8_vs_release\export\vs\Win32\freetype.dll
+  	    New File  		  237568	C:\Users\Famke van Meurs\Documents\of_v0.9.8_vs_release\export\vs\Win32\glut32.dll
+  	    New File  		 1178624	C:\Users\Famke van Meurs\Documents\of_v0.9.8_vs_release\export\vs\Win32\libeay32.dll
+  	    New File  		  269824	C:\Users\Famke van Meurs\Documents\of_v0.9.8_vs_release\export\vs\Win32\ssleay32.dll
+  	    New File  		   69632	C:\Users\Famke van Meurs\Documents\of_v0.9.8_vs_release\export\vs\Win32\Zlib.dll
