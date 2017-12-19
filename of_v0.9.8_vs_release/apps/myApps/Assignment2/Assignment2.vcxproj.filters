@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Board.cpp" />
+    <ClCompile Include="src\ComputerPlayer.cpp" />
+    <ClCompile Include="src\Field.cpp" />
+    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\GameView.cpp" />
+    <ClCompile Include="src\HumanPlayer.cpp" />
+    <ClCompile Include="src\MinMaxPlayer.cpp" />
+    <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\Position.cpp" />
+    <ClCompile Include="src\RandomPlayer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Board.hpp" />
+    <ClInclude Include="src\ComputerPlayer.hpp" />
+    <ClInclude Include="src\Field.hpp" />
+    <ClInclude Include="src\Game.hpp" />
+    <ClInclude Include="src\GameView.hpp" />
+    <ClInclude Include="src\HumanPlayer.hpp" />
+    <ClInclude Include="src\MinMaxPlayer.hpp" />
+    <ClInclude Include="src\Player.hpp" />
+    <ClInclude Include="src\Position.hpp" />
+    <ClInclude Include="src\RandomPlayer.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+</Project>
