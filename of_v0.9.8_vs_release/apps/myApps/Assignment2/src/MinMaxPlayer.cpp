@@ -36,8 +36,89 @@ Position MinMaxPlayer::getNextMove(Board const& board, Field current_field) {
 }
 
 int MinMaxPlayer::getMinMaxScore(Board const& board, Field current_field, int depth) {
-	int depth = 0;
-	
+	int depth = 2;
+	int heuristicScore = -20;
+	int twoX;
+	int oneX;
+	int twoO;
+	int oneO;
+
+	// loops through the grid fields vertical, checks the rows
+	for (int y = 0; y < GRID_SIZE; y++) {
+		int current = 0;
+		int other = 0;
+		//check horizontal positions
+		for (int x = 0; x < GRID_SIZE; x++) {
+			// when there is an X then it should get counted
+			if (board.getField(0, y) == current_field) {
+				current++;
+			}
+			//when there is an O then it should get counted
+			if (board.getField(0, y) == ~current_field) {
+				other++;
+			}
+		}
+		//see if two symbols are next to each other and what the score should be then
+		if (other == 2 && current == 0) {
+			twoO++;
+		}
+		if (current == 2 && other == 0) {
+			twoX++;
+		}
+		if (other == 1 && current == 0) {
+			oneO++;
+		}
+		if (current == 1 && other == 0) {
+			oneX++;
+		}
+	}
+
+
+	// loops through the grid fields horizontal, checks the columns 
+	for (int x = 0; x < GRID_SIZE; x++) {
+		int current = 0;
+		int other = 0;
+		//check vertical positions
+		for (int y = 0; y < GRID_SIZE; y++) {
+			// when there is an X then it should get counted
+			if (board.getField(0, y) == current_field) {
+				current++;
+			}
+			//when there is an O then it should get counted
+			if (board.getField(0, y) == ~current_field) {
+				other++;
+			}
+		}
+		//see if two symbols are next to each other and what the score should be then
+		if (other == 2 && current == 0) {
+			twoO++;
+		}
+		if (current == 2 && other == 0) {
+			twoX++;
+		}
+		if (other == 1 && current == 0) {
+			oneO++;
+		}
+		if (current == 1 && other == 0) {
+			oneX++;
+		}
+	}
+
+	// diagonal
+	if (board.getField(0, 0) != Field::Empty && board.getField(0, 0) == board.getField(1, 1) || board.getField(1, 1) == board.getField(2, 2) || board.getField(0, 0) == board.getField(2, 2) && board.getField == current_field) {
+
+	}
+	if (board.getField(0, 2) != Field::Empty && board.getField(0, 2) == board.getField(1, 1) && board.getField(1, 1) == board.getField(2, 0)) {
+
+	}
+
+
+	heuristicScore = (3 * twoX + oneX) - (3 * twoO + oneO);
+
+
+
+
+
 	// determines the score 
 	if (board.isWinner(current_field)) {
 		return 10;
