@@ -19,7 +19,7 @@ public:
     // returns the position of the next move for this player (given the current board and the symbol(Field) of the current player)
     Position getNextMove(Board const&, Field) override;
 
-	int getMinMaxScore(Board const & board, Field current_field, int depth);
+	//int getMinMaxScore(Board const & board, Field current_field, int depth);
     
 private:
     // return the maximum possible score given a board and the symbol(Field) of a player
